@@ -61,20 +61,39 @@
 
 		<div class="page">
 			<blockquote class="quote">
-				<p>A good programmer is someone who always looks both ways before crossing a one-way street. </p>
-				<footer>Doug Linder</footer>
+				<p>Contact</p>
 			</blockquote>
-
 		</div>
+
 		<div class="page">
 			<blockquote class="quote">
-				<p>A good programmer is someone who always looks both ways before crossing a one-way street. </p>
-				<footer>Dog</footer>
+				<p>CV</p>
 			</blockquote>
-
 		</div>
 
+		<div class="page">
+			<blockquote class="quote">
+				<p>Github</p>
+			</blockquote>
+		</div>
 
+		<div class="page">
+			<blockquote class="quote">
+				<p>About</p>
+			</blockquote>
+		</div>
+
+		<div class="page">
+			<blockquote class="quote">
+				<p>Gallary</p>
+			</blockquote>
+		</div>
+
+		<div class="page">
+			<blockquote class="quote">
+				<p>Terminal</p>
+			</blockquote>
+		</div>
 
 	</div>
 
@@ -82,14 +101,14 @@
 
 	<!-- /pages -->
 	<nav class="pagenav">
-		<button class="pagenav__button pagenav__button--top" aria-label="Navigate top"><svg class="icon icon--rtop"><use xlink:href="#icon-arrow"></use></svg></button>
-		<button class="pagenav__button pagenav__button--left" aria-label="Navigate left"><svg class="icon"><use xlink:href="#icon-arrow"></use></svg></button>
-		<button class="pagenav__button pagenav__button--right" aria-label="Navigate right"><svg class="icon icon--rright"><use xlink:href="#icon-arrow"></use></svg></button>
-		<button class="pagenav__button pagenav__button--bottom" aria-label="Navigate bottom"><svg class="icon icon--rbottom"><use xlink:href="#icon-arrow"></use></svg></button>
-		<button class="pagenav__button pagenav__button--cornertopleft" aria-label="Navigate top left"><svg class="icon icon--rtopleft"><use xlink:href="#icon-arrow"></use></svg></button>
-		<button class="pagenav__button pagenav__button--cornertopright" aria-label="Navigate top right"><svg class="icon icon--rtopright"><use xlink:href="#icon-arrow"></use></svg></button>
-		<button class="pagenav__button pagenav__button--cornerbottomleft" aria-label="Navigate bottom left"><svg class="icon icon--rbottomleft"><use xlink:href="#icon-arrow"></use></svg></button>
-		<button class="pagenav__button pagenav__button--cornerbottomright" aria-label="Navigate bottom right"><svg class="icon icon--rbottomright"><use xlink:href="#icon-arrow"></use></svg></button>
+		<button class="pagenav__button pagenav__button--top pagenav_button_default" aria-label="Navigate top" id="1"><svg class="icon icon--rtop"><use xlink:href="#icon-arrow"></use></svg></button>
+		<button class="pagenav__button pagenav__button--left pagenav_button_default" aria-label="Navigate left" id="5"><svg class="icon"><use xlink:href="#icon-arrow"></use></svg></button>
+		<button class="pagenav__button pagenav__button--right pagenav_button_default" aria-label="Navigate right" id="10"><svg class="icon icon--rright"><use xlink:href="#icon-arrow"></use></svg></button>
+		<button class="pagenav__button pagenav__button--bottom pagenav_button_default" aria-label="Navigate bottom" id="2"><svg class="icon icon--rbottom"><use xlink:href="#icon-arrow"></use></svg></button>
+		<button class="pagenav__button pagenav__button--cornertopleft pagenav_button_hidden" aria-label="Navigate top left" id="3" style="visibility: hidden"><svg class="icon icon--rtopleft"><use xlink:href="#icon-arrow"></use></svg></button>
+		<button class="pagenav__button pagenav__button--cornertopright pagenav_button_hidden" aria-label="Navigate top right" id="14"  style="visibility: hidden"><svg class="icon icon--rtopright"><use xlink:href="#icon-arrow"></use></svg></button>
+		<button class="pagenav__button pagenav__button--cornerbottomleft pagenav_button_default" aria-label="Navigate bottom left" id="7"><svg class="icon icon--rbottomleft"><use xlink:href="#icon-arrow"></use></svg></button>
+		<button class="pagenav__button pagenav__button--cornerbottomright pagenav_button_default" aria-label="Navigate bottom right" id="6"><svg class="icon icon--rbottomright"><use xlink:href="#icon-arrow"></use></svg></button>
 	</nav>
 </main>
 <script src="js/classie.js"></script>
@@ -98,29 +117,21 @@
 	(function() {
 		var pages = [].slice.call(document.querySelectorAll('.pages > .page')),
 				currentPage = 0,
-
 				revealerOpts = {
-					// the layers are the elements that move from the sides
-					nmbLayers : 3,
-					// bg color of each layer
+					nmbLayers : 2,
 					bgcolor : ['#112432', '#5e7783', '#4d1635'],
-					//bgcolor : ['#202023', '#555', '#d1d1d1'],
-					// effect classname
-					effect : 'anim--effect-3',
+					effect : 'anim--effect-4',
 					onStart : function(direction) {
-						// next page gets class page--animate-[direction]
 						var nextPage = pages[currentPage === 0 ? 1 : 0];
 						classie.add(nextPage, 'page--animate-' + direction);
 					},
 					onEnd : function(direction) {
-						// remove class page--animate-[direction] from next page
 						var nextPage = pages[currentPage === 0 ? 1 : 0];
 						nextPage.className = 'page';
 					}
 				};
 		revealer = new Revealer(revealerOpts);
 
-		// clicking the page nav buttons
 		document.querySelector('button.pagenav__button--top').addEventListener('click', function() { reveal('top'); });
 		document.querySelector('button.pagenav__button--left').addEventListener('click', function() { reveal('left'); });
 		document.querySelector('button.pagenav__button--right').addEventListener('click', function() { reveal('right'); });
@@ -130,40 +141,88 @@
 		document.querySelector('button.pagenav__button--cornerbottomleft').addEventListener('click', function() { reveal('cornerbottomleft'); });
 		document.querySelector('button.pagenav__button--cornerbottomright').addEventListener('click', function() { reveal('cornerbottomright'); });
 
-		// triggers the effect by calling instance.reveal(direction, callbackTime, callbackFn)
 		function reveal(direction) {
 			var callbackTime = 750,
 					callbackFn = function() {
+							var buttonNum = 1;
+							var pageNum	= 1;
+						switch (direction) {
+							case 'top':
+								buttonNum = 1;
+								pageNum = 1;
+								break;
+							case 'left':
+								buttonNum = 5;
+								pageNum= 2;
+								break;
+							case 'right':
+								buttonNum = 10;
+								pageNum = 6;
+								break;
+							case 'bottom':
+								buttonNum = 2;
+								pageNum = 4;
+								break;
+							case 'cornerbottomleft':
+								buttonNum = 7;
+								pageNum = 3;
+								break;
+							case 'cornerbottomright':
+								buttonNum = 6;
+								pageNum = 5;
+								break;
+						}
+						var displayButton = 0
+						if (buttonNum % 2 === 0){
+							displayButton = buttonNum/2;
+							displayButtons("hidden");
+							var button = document.getElementById(displayButton);
+							button.style.visibility = "visible";
+						} else {
+							displayButton = buttonNum*2;
+							displayButtons("hidden");
+							var button = document.getElementById(displayButton);
+							button.style.visibility = "visible";
+						}
 						classie.remove(pages[currentPage], 'page--current');
-						currentPage = currentPage === 0 ? 1 : 0;
+						currentPage = currentPage === 0 ? pageNum : 0;
 						classie.add(pages[currentPage], 'page--current');
+						if (currentPage === 0){
+							displayButtons("visible");
+							hideButtons();
+						}
 					};
-
 			revealer.reveal(direction, callbackTime, callbackFn);
 		}
 
-		// changing the effect..
+		function displayButtons(option) {
+			var element = document.getElementsByClassName("pagenav_button_default");
+			for(var i = 0; i < element.length; i++){
+				element[i].style.visibility = option;
+			}
+		}
+		function hideButtons(){
+			var element = document.getElementsByClassName("pagenav_button_hidden");
+			for(var i = 0; i < element.length; i++){
+				element[i].style.visibility = "hidden";
+			}
+		}
+
 		var effectCtrl = document.getElementById('select-effect');
 		effectCtrl.addEventListener('change', changeEffect);
-		// force it to be the first opt as default
-		effectCtrl.value = 'effect-3';
+		effectCtrl.value = 'effect-4';
 
 		function changeEffect() {
 			revealer.destroy();
 			var revealerOpts = {
-				// the layers are the elements that move from the sides
 				nmbLayers : Number(this.options[this.selectedIndex].getAttribute('data-layers')),
-				// bg color of each layer
 				bgcolor : this.options[this.selectedIndex].getAttribute('data-colors').split(','),
-				// effect classname
 				effect : 'anim--' + this.value,
 				onStart : function(direction) {
-					// next page gets class page--animate-[direction]
 					var nextPage = pages[currentPage === 0 ? 1 : 0];
 					classie.add(nextPage, 'page--animate-' + direction);
 				},
 				onEnd : function(direction) {
-					// remove class page--animate-[direction] from next page
 					var nextPage = pages[currentPage === 0 ? 1 : 0];
 					nextPage.className = 'page';
 				}
@@ -174,7 +233,6 @@
 	})();
 
 
-	// Wrap every letter in a span
 	var textWrapper = document.querySelector('.ml11 .letters');
 	textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 

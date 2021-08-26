@@ -526,11 +526,31 @@ body {
 /* Forth effect */
 
 .anim--effect-4 .page:first-child {
-	background: #28282D;
+	background: #91C7B1;
 }
 
 .anim--effect-4 .page:nth-child(2) {
-	background: #F15C5C;
+	background: #F0A6CA;
+}
+
+.anim--effect-4 .page:nth-child(3) {
+	background: #F1F7ED;
+}
+
+.anim--effect-4 .page:nth-child(4) {
+	background: #B33951;
+}
+
+.anim--effect-4 .page:nth-child(5) {
+	background: #E3D081;
+}
+
+.anim--effect-4 .page:nth-child(6) {
+	background: #EB6534;
+}
+
+.anim--effect-4 .page:nth-child(7) {
+	background: #DE4D86;
 }
 
 .anim--effect-4 .page--animate-top .quote {
