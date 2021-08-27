@@ -12,6 +12,13 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+body {
+	position: relative;
+}
 body {
 	font-family: 'Source Sans Pro', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #444;
@@ -22,6 +29,7 @@ body {
 	animation: fadeInAnimation ease 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
+
 }
 
 @keyframes fadeInAnimation {
