@@ -550,7 +550,8 @@
 }
 
 .anim--effect-4 .page:nth-child(7) {
-	background: #DE4D86;
+	/*background: #665687;*/
+	background: #ffa552;
 }
 
 .anim--effect-4 .page--animate-top .quote {

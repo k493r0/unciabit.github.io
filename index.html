@@ -11,9 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/animation.css" />
+	<link rel="stylesheet" type="text/css" href="css/pages.css" />
 	<script src="js/modernizr-custom.js"></script>
 	<script src="js/animation.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="css/prefix.css" />
 </head>
 <body id="body">
 <div class="wrapper" id="wrapper">
@@ -45,29 +46,29 @@
 
 
 					<div class="container2">
-						<div class="center">▲</div>
+						<div class="row-center">▲</div>
 					</div>
 					<div class="container2">
-						<div class="center">Contact</div>
+						<div class="row-center">Contact</div>
 					</div>
 
 					<div class="container2">
-						<div class="left">◄ CV</div>
-						<div class="right">Gallary ►</div>
+						<div class="row-left">◄ CV</div>
+						<div class="row-right">Gallary ►</div>
 					</div>
 					<div class="container2" style="visibility: hidden">
-						<div class="center">placeholder</div>
+						<div class="row-center">placeholder</div>
 					</div>
 					<div class="container2" style="visibility: hidden">
-						<div class="center">About Me</div>
+						<div class="row-center">About Me</div>
 					</div>
 					<div class="container2">
-						<div class="left">⇙ GitHub</div>
-						<div class="right">Terminal ⇘</div>
-						<div class="center">About Me</div>
+						<div class="row-left">⇙ GitHub</div>
+						<div class="row-right">Terminal ⇘</div>
+						<div class="row-center">About Me</div>
 					</div>
 					<div class="container2">
-						<div class="center">▼</div>
+						<div class="row-center">▼</div>
 					</div>
 
 				</div>
@@ -87,8 +88,6 @@
 			</header>
 
 		</div><!-- /page -->
-
-
 
 		<div class="page page_indiv">
 			<blockquote class="quote">
@@ -118,12 +117,26 @@
 			</blockquote>
 		</div>
 
-		<div class="page page_indiv">
-			<blockquote class="quote">
-				<p>Gallary</p>
-			</blockquote>
-		</div>
+		<div class="page page_indiv container2" style="overflow:auto;justify-content:flex-start;">
+			<div class="container2">
 
+				<div class="card">
+					<div class="card-image"></div>
+					<div class="card-text">
+						<h2>Post One</h2>
+						<p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-image"></div>
+					<div class="card-text">
+						<h2>Post One</h2>
+						<p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- /pages -->
