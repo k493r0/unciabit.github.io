@@ -27,7 +27,7 @@
 		</symbol>
 	</defs>
 </svg>
-<main class="container">
+<main class="container" id="container_1">
 	<div class="pages">
 		<div class="page page--current"><!-- intro page -->
 			<header class="codrops-header">
@@ -353,6 +353,19 @@
 		document.body.removeEventListener('touchmove', preventDefault);
 	}
 	disableScroll();
+
+	var heights = window.innerHeight;
+	document.getElementById("body").style.height = heights + "px";
+	document.getElementById("container_1").style.height = heights + "px";
+
+	window.addEventListener('resize', () => {
+		// We execute the same script as before
+		var heights = window.innerHeight;
+		document.getElementById("body").style.height = heights + "px";
+		document.getElementById("container_1").style.height = heights + "px";
+	});
+
+
 
 </script>
 </div>
