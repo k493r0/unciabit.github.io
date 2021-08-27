@@ -392,7 +392,7 @@ a:focus {
 		width: 160px;
 	}
 	.container .page {
-		padding: 2.85em;
+		padding: 3.5em;
 	}
 	.container .pagenav {
 		top: 0.5em;
@@ -403,6 +403,7 @@ a:focus {
 	}
 }
 .page{
+	height: calc(100vh - calc(100vh - 100%));
 	display: flex;
 	justify-content: center;
 	align-items: center;

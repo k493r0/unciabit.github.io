@@ -62,8 +62,7 @@
 				</div>
 				<div class="container2">
 					<div class="left">◄ CV</div>
-					<div class="right">Terminal ►</div>
-					<div class="center">-------</div>
+					<div class="right">Gallary ►</div>
 				</div>
 				<div class="container2" style="visibility: hidden">
 					<div class="center">placeholder</div>
@@ -73,7 +72,7 @@
 				</div>
 				<div class="container2">
 					<div class="left">⇙ GitHub</div>
-					<div class="right">Gallary ⇘</div>
+					<div class="right">Terminal ⇘</div>
 					<div class="center">About Me</div>
 				</div>
 				<div class="container2">
@@ -97,39 +96,37 @@
 
 
 
-		<div class="page">
+		<div class="page page_indiv">
 			<blockquote class="quote">
 				<p>Contact</p>
 			</blockquote>
 		</div>
 
-		<div class="page">
-			<blockquote class="quote">
-				<p>CV</p>
-			</blockquote>
+		<div class="page page_indiv">
+			<h1>Download My CV here</h1>
 		</div>
 
-		<div class="page">
+		<div class="page page_indiv">
 			<blockquote class="quote">
 				<p>Github</p>
 			</blockquote>
 		</div>
 
-		<div class="page">
+		<div class="page page_indiv">
 			<blockquote class="quote">
 				<p>About</p>
 			</blockquote>
 		</div>
 
-		<div class="page">
+		<div class="page page_indiv">
 			<blockquote class="quote">
-				<p>Gallary</p>
+				<p>Terminal</p>
 			</blockquote>
 		</div>
 
-		<div class="page">
+		<div class="page page_indiv">
 			<blockquote class="quote">
-				<p>Terminal</p>
+				<p>Gallary</p>
 			</blockquote>
 		</div>
 
@@ -357,7 +354,10 @@
 	var heights = window.innerHeight;
 	document.getElementById("body").style.height = heights + "px";
 	document.getElementById("container_1").style.height = heights + "px";
-
+	var element = document.getElementsByClassName("page_indiv");
+	for(var i = 0; i < element.length; i++){
+		element[i].style.height = heights + "px";
+	}
 	window.addEventListener('resize', () => {
 		// We execute the same script as before
 		var heights = window.innerHeight;
