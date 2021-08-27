@@ -13,11 +13,15 @@
 }
 
 html, body {
-	overflow-x: hidden;
-	overflow-y: hidden;
+
 }
 body {
 	position: relative;
+}
+.wrapper{
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 body {
 	font-family: 'Source Sans Pro', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
