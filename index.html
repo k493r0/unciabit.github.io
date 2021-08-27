@@ -17,7 +17,7 @@
 
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper" id="wrapper">
 <!-- SVG symbol used for navigation arrows -->
 <svg class="hidden">
 	<defs>
@@ -354,13 +354,9 @@
 	}
 	disableScroll();
 
-	let vh = window.innerHeight * 0.01;
-	document.documentElement.style.setProperty('--vh', `${vh}px`);
-	window.addEventListener('resize', () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty('--vh', `${vh}px`);
-	});
+
+	var heights = window.innerHeight;
+	document.getElementById("wrapper").style.height = heights + "px";
 
 </script>
 </div>
