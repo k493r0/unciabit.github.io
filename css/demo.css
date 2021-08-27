@@ -17,7 +17,7 @@
 /*	height: calc(var(--vh, 1vh) * 100);*/
 /*}*/
 body {
-	position: relative;
+	/*position: relative;*/
 	/*min-height: 100vh;*/
 	/*min-height: -webkit-fill-available;*/
 }
@@ -27,6 +27,7 @@ html{
 .wrapper{
 	position: relative;
 	overflow:hidden;
+	height: calc(100vh - calc(100vh - 100%));
 }
 body {
 	font-family: 'Source Sans Pro', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
