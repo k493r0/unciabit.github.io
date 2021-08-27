@@ -31,13 +31,48 @@
 		<div class="page page--current"><!-- intro page -->
 			<header class="codrops-header">
 				<div class="page-center">
-				<h1 class="ml11">
-				  <span class="text-wrapper">
-					<span class="line line1"></span>
-					<span class="letters">Welcome to UnciaBit</span>
-				  </span>
-				</h1>
+					<h1 class="ml11">
+					  <span class="text-wrapper">
+						<span class="line line1"></span>
+						<span class="letters">Welcome to UnciaBit</span>
+					  </span>
+					</h1>
 				</div>
+
+				<div class="container2">
+					<div id="center">▲</div>
+				</div>
+				<div class="container2">
+					<div id="center">Contact</div>
+				</div>
+				<div class="container2" style="visibility: hidden">
+					<div id="center">placeholder</div>
+				</div>
+				<div class="container2" style="visibility: hidden">
+					<div id="left">left</div>
+					<div id="right">right</div>
+					<div id="center">Contact</div>
+				</div>
+				<div class="container2">
+					<div id="left">◄ CV</div>
+					<div id="right">Terminal ►</div>
+					<div id="center">-------</div>
+				</div>
+				<div class="container2" style="visibility: hidden">
+					<div id="center">placeholder</div>
+				</div>
+				<div class="container2" style="visibility: hidden">
+					<div id="center">About Me</div>
+				</div>
+				<div class="container2">
+					<div id="left">⇙ GitHub Repos</div>
+					<div id="right">Gallary ⇘</div>
+					<div id="center">About Me</div>
+				</div>
+				<div class="container2">
+					<div id="center">▼</div>
+				</div>
+
 				<div class="codrops-header__subbox" hidden>
 					<span>Choose an effect:</span>
 					<div class="custom-select">
@@ -92,8 +127,6 @@
 		</div>
 
 	</div>
-
-
 
 	<!-- /pages -->
 	<nav class="pagenav">
@@ -228,7 +261,6 @@
 		}
 	})();
 
-
 	var textWrapper = document.querySelector('.ml11 .letters');
 	textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
@@ -238,28 +270,43 @@
 				scaleY: [0,1],
 				opacity: [0.5,1],
 				easing: "easeOutExpo",
-				duration: 800
+				duration: 700
 			})
 			.add({
 				targets: '.ml11 .line',
 				translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width],
 				easing: "easeOutExpo",
-				duration: 800,
-				delay: 200
+				duration: 700,
+				delay: 100
 			}).add({
 		targets: '.ml11 .letter',
 		opacity: [0,1],
 		easing: "easeOutExpo",
-		duration: 700,
+		duration: 600,
 		offset: '-=775',
 		delay: (el, i) => 34 * (i+1)
 	}).add({
 		targets: '.ml11',
 		opacity: 0,
-		duration: 1100,
+		duration: 1000,
 		easing: "easeOutExpo",
-		delay: 1100
+		delay: 1000
 	});
+
+
+	var textWrapper2 = document.querySelector('.ml13');
+	textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+	anime.timeline({loop: false})
+			.add({
+				targets: '.ml13 .letter',
+				translateY: [100,0],
+				translateZ: 0,
+				opacity: [0,1],
+				easing: "easeOutExpo",
+				duration: 1400,
+				delay: (el, i) => 300 + 30 * i
+			});
 </script>
 </body>
 </html>

@@ -372,6 +372,11 @@ a:focus {
 		font-size: 0.85em;
 	}
 }
+.page{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 @media screen and (max-width: 40em) {
 	.pater__title {
