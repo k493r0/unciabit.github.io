@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
 	<title>UnciaBit</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600|Merriweather:400' rel='stylesheet' type='text/css'>
@@ -16,7 +16,7 @@
 	<script src="js/animation.js"></script>
 
 </head>
-<body>
+<body id="body">
 <div class="wrapper" id="wrapper">
 <!-- SVG symbol used for navigation arrows -->
 <svg class="hidden">
@@ -356,7 +356,7 @@
 
 
 	var heights = window.innerHeight;
-	document.getElementById("wrapper").style.height = heights + "px";
+	document.getElementById("body").style.height = heights + "px";
 
 </script>
 </div>

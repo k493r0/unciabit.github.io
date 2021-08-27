@@ -18,11 +18,11 @@
 /*}*/
 body {
 	position: relative;
-	min-height: 100vh;
-	min-height: -webkit-fill-available;
+	/*min-height: 100vh;*/
+	/*min-height: -webkit-fill-available;*/
 }
 html{
-	height: -webkit-fill-available;
+	/*height: -webkit-fill-available;*/
 }
 .wrapper{
 	position: relative;
