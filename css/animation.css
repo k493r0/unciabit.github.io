@@ -102,6 +102,6 @@
 }
 
 #container2{width:100%;margin: 0 auto;text-align: center}
-#left{float:left;text-align: center}
-#right{float:right;text-align: center}
-#center{margin:0 auto;width: 150px;text-align: center}
+.left{float:left;text-align: center}
+.right{float:right;text-align: center}
+.center{margin:0 auto;width: 150px;text-align: center}
