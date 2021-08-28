@@ -459,24 +459,24 @@
 	// var random_color = colors[Math.floor(Math.random() * colors.length)];
 	// document.querySelector('.content').style.color = random_color;
 
-	var cardWidth = document.getElementById("card").offsetWidth;
-	var boxShadow = "-" + cardWidth/10 + "px " + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #a54c29, " + cardWidth/10 + "px " + "-" + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #ff7641";
-	var carDiv = document.getElementsByClassName("card");
-	for (var i = 0; i < carDiv.length; i++) {
-		carDiv[i].style.boxShadow = boxShadow;
-		carDiv[i].style.background="#D36135";
-	}
-
-	window.addEventListener('resize', () => {
-		// We execute the same script as before
-		var cardWidth = document.getElementById("card").offsetWidth;
-		var boxShadow = "-" + cardWidth/10 + "px " + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #a54c29, " + cardWidth/10 + "px " + "-" + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #ff7641";
-		var carDiv = document.getElementsByClassName("card");
-		for (var i = 0; i < carDiv.length; i++) {
-			carDiv[i].style.boxShadow = boxShadow;
-			carDiv[i].style.background="#D36135";
-		}
-	});
+	// var cardWidth = document.getElementById("card").offsetWidth;
+	// var boxShadow = "-" + cardWidth/10 + "px " + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #a54c29, " + cardWidth/10 + "px " + "-" + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #ff7641";
+	// var carDiv = document.getElementsByClassName("card");
+	// for (var i = 0; i < carDiv.length; i++) {
+	// 	carDiv[i].style.boxShadow = boxShadow;
+	// 	carDiv[i].style.background="#D36135";
+	// }
+	//
+	// window.addEventListener('resize', () => {
+	// 	// We execute the same script as before
+	// 	var cardWidth = document.getElementById("card").offsetWidth;
+	// 	var boxShadow = "-" + cardWidth/10 + "px " + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #a54c29, " + cardWidth/10 + "px " + "-" + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #ff7641";
+	// 	var carDiv = document.getElementsByClassName("card");
+	// 	for (var i = 0; i < carDiv.length; i++) {
+	// 		carDiv[i].style.boxShadow = boxShadow;
+	// 		carDiv[i].style.background="#D36135";
+	// 	}
+	// });
 
 	jQuery(".project-h2").fitText(1);
 	jQuery(".project-p").fitText(2);
@@ -487,7 +487,7 @@
 		if(btn.innerText === "Reveal Email"){
 			btn.innerText = "yuki.kume@unciabit.com";
 		}else{
-			btn.innerText= "Reveal Email";
+			btn.innerText= "yuki.kume@unciabit.com";
 		}
 	})
 
