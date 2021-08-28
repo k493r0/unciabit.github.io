@@ -236,7 +236,9 @@ h2 {
         grid-template-areas: "image" "text" "stats";
         border-radius: 18px;
         background: #34816D;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;        font-family: roboto;
+        /*box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;*/
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        font-family: roboto;
         text-align: center;
     }
 }
@@ -249,7 +251,9 @@ h2 {
         grid-template-areas: "image" "text" "stats";
         border-radius: 18px;
         background: #34816D;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;        font-family: roboto;
+        /*box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;*/
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        font-family: roboto;
         text-align: center;
     }
 }
