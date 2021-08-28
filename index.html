@@ -15,6 +15,11 @@
 	<script src="js/modernizr-custom.js"></script>
 	<script src="js/animation.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/prefix.css" />
+	<script src="js/TagCloud.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/jquery.fittext.js"></script>
+
 </head>
 <body id="body">
 <div class="wrapper" id="wrapper">
@@ -54,17 +59,19 @@
 
 					<div class="container2">
 						<div class="row-left">◄ CV</div>
-						<div class="row-right">Gallary ►</div>
+						<div class="row-right">Projects ►</div>
 					</div>
 					<div class="container2" style="visibility: hidden">
 						<div class="row-center">placeholder</div>
 					</div>
-					<div class="container2" style="visibility: hidden">
-						<div class="row-center">About Me</div>
-					</div>
+
+<!--					<div class="container2" style="visibility: hidden">-->
+<!--						<div class="row-center">About Me</div>-->
+<!--					</div>-->
+
 					<div class="container2">
-						<div class="row-left">⇙ GitHub</div>
-						<div class="row-right">Terminal ⇘</div>
+<!--						<div class="row-left">⇙ GitHub</div>-->
+<!--						<div class="row-right">Terminal ⇘</div>-->
 						<div class="row-center">About Me</div>
 					</div>
 					<div class="container2">
@@ -89,10 +96,42 @@
 
 		</div><!-- /page -->
 
-		<div class="page page_indiv">
-			<blockquote class="quote">
-				<p>Contact</p>
-			</blockquote>
+		<div class="page page_indiv" style="background:#ecf0f3; justify-content: normal">
+			<div class="profile-wrapper">
+				<div class="img-area">
+					<div class="inner-area">
+						<img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+					</div>
+				</div>
+				<div class="name">Yuki Kume</div>
+				<div class="about">Developer</div>
+				<div class="social-icons">
+					<a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+					<a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+					<a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+				</div>
+				<div class="buttons">
+					<button>Message</button>
+					<button>Subscribe</button>
+				</div>
+				<div class="social-share">
+					<div class="row">
+						<i class="far fa-heart"></i>
+						<i class="icon-2 fas fa-heart"></i>
+						<span>20.4k</span>
+					</div>
+					<div class="row">
+						<i class="far fa-comment"></i>
+						<i class="icon-2 fas fa-comment"></i>
+						<span>14.3k</span>
+					</div>
+					<div class="row">
+						<i class="fas fa-share"></i>
+						<span>12.8k</span>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="page page_indiv">
@@ -105,10 +144,12 @@
 			</blockquote>
 		</div>
 
-		<div class="page page_indiv">
-			<blockquote class="quote">
-				<p>About</p>
-			</blockquote>
+		<div class="page page_indiv tagcloud-div" style="">
+			<div class="about-me">
+				<h1>About Me</h1>
+				<p>asdasdjl ajslk djakls jdlkasj lkajdlkjasl kdjalsk jdla</p>
+			</div>
+				<span class="tagcloud-span"></span>
 		</div>
 
 		<div class="page page_indiv">
@@ -120,19 +161,27 @@
 		<div class="page page_indiv container2" style="overflow:auto;justify-content:flex-start;">
 			<div class="container2">
 
-				<div class="card">
+				<div class="card" id="card">
 					<div class="card-image"></div>
 					<div class="card-text">
-						<h2>Post One</h2>
-						<p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+						<h2 class="project-h2">Project One</h2>
+						<p class="project-p">Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
 					</div>
 				</div>
 
 				<div class="card">
 					<div class="card-image"></div>
 					<div class="card-text">
-						<h2>Post One</h2>
-						<p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+						<h2 class="project-h2">Project One</h2>
+						<p class="project-p">Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-image"></div>
+					<div class="card-text">
+						<h2 class="project-h2">Project One</h2>
+						<p class="project-p">Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
 					</div>
 				</div>
 			</div>
@@ -147,8 +196,8 @@
 		<button class="pagenav__button pagenav__button--bottom pagenav_button_default" aria-label="Navigate bottom" id="2"><svg class="icon icon--rbottom"><use xlink:href="#icon-arrow"></use></svg></button>
 		<button class="pagenav__button pagenav__button--cornertopleft pagenav_button_hidden" aria-label="Navigate top left" id="3" style="visibility: hidden"><svg class="icon icon--rtopleft"><use xlink:href="#icon-arrow"></use></svg></button>
 		<button class="pagenav__button pagenav__button--cornertopright pagenav_button_hidden" aria-label="Navigate top right" id="14"  style="visibility: hidden"><svg class="icon icon--rtopright"><use xlink:href="#icon-arrow"></use></svg></button>
-		<button class="pagenav__button pagenav__button--cornerbottomleft pagenav_button_default" aria-label="Navigate bottom left" id="7"><svg class="icon icon--rbottomleft"><use xlink:href="#icon-arrow"></use></svg></button>
-		<button class="pagenav__button pagenav__button--cornerbottomright pagenav_button_default" aria-label="Navigate bottom right" id="6"><svg class="icon icon--rbottomright"><use xlink:href="#icon-arrow"></use></svg></button>
+		<button class="pagenav__button pagenav__button--cornerbottomleft pagenav_button_hidden" aria-label="Navigate bottom left" id="7" style="visibility: hidden"><svg class="icon icon--rbottomleft"><use xlink:href="#icon-arrow"></use></svg></button>
+		<button class="pagenav__button pagenav__button--cornerbottomright pagenav_button_hidden" aria-label="Navigate bottom right" id="6" style="visibility: hidden"><svg class="icon icon--rbottomright"><use xlink:href="#icon-arrow"></use></svg></button>
 	</nav>
 </main>
 <script src="js/classie.js"></script>
@@ -371,6 +420,80 @@
 		document.getElementById("body").style.height = heights + "px";
 		document.getElementById("container_1").style.height = heights + "px";
 	});
+
+	const myTags = [
+		'JavaScript', 'CSS', 'HTML',
+		'C', 'C++', 'PHP',
+		'Python', 'Java', 'git',
+		'MySQL', 'Rust', 'OpenCV',
+		'jQuery'
+	];
+
+	var width = window.innerWidth;
+
+	if (width > 600){//
+		var cloudRadius = 240;
+	} else if (width < 600){
+		var cloudRadius = 130;
+	}
+
+	window.addEventListener('resize', () => {
+		if (width > 600){//
+			var cloudRadius = 240;
+		} else if (width < 600){
+			var cloudRadius = 180;
+		}
+
+		// alert("Refresh page for best experience");
+	});
+
+
+
+	var tagCloud = TagCloud('.tagcloud-span', myTags,{
+
+		// radius in px
+
+		radius: cloudRadius,
+
+		// animation speed
+		// slow, normal, fast
+		maxSpeed: 'fast',
+		initSpeed: 'fast',
+
+		// 0 = top
+		// 90 = left
+		// 135 = right-bottom
+		direction: 135,
+
+		// interact with cursor move on mouse out
+		keep: true
+
+	});
+	// var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
+	// var random_color = colors[Math.floor(Math.random() * colors.length)];
+	// document.querySelector('.content').style.color = random_color;
+
+	var cardWidth = document.getElementById("card").offsetWidth;
+	var boxShadow = "-" + cardWidth/10 + "px " + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #c78140, " + cardWidth/10 + "px " + "-" + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #ffc964";
+	var carDiv = document.getElementsByClassName("card");
+	for (var i = 0; i < carDiv.length; i++) {
+		carDiv[i].style.boxShadow = boxShadow;
+		carDiv[i].style.background="#ffa552";
+	}
+
+	window.addEventListener('resize', () => {
+		// We execute the same script as before
+		var cardWidth = document.getElementById("card").offsetWidth;
+		var boxShadow = "-" + cardWidth/10 + "px " + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #c78140, " + cardWidth/10 + "px " + "-" + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #ffc964";
+		var carDiv = document.getElementsByClassName("card");
+		for (var i = 0; i < carDiv.length; i++) {
+			carDiv[i].style.boxShadow = boxShadow;
+			carDiv[i].style.background="#ffa552";
+		}
+	});
+
+	jQuery(".project-h2").fitText(1);
+	jQuery(".project-p").fitText(2);
 
 
 
