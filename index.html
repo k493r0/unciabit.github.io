@@ -100,35 +100,28 @@
 			<div class="profile-wrapper">
 				<div class="img-area">
 					<div class="inner-area">
-						<img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+						<img src="img/prof.jpeg" alt="">
 					</div>
 				</div>
 				<div class="name">Yuki Kume</div>
 				<div class="about">Developer</div>
 				<div class="social-icons">
-					<a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-					<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-					<a href="#" class="insta"><i class="fab fa-instagram"></i></a>
-					<a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+					<a href="https://github.com/UnciaBit" class="git"><i class="fab fa-github"></i></a>
+					<a href="https://github.com/WrenHainsworth" class="git"><i class="fab fa-github"></i></a>
+					<a href="https://github.com/YukiKumw" class="git"><i class="fab fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/yuki-kume-822441178/" class=""><i class="fab fa-linkedin-in"></i></a>
+<!--					<a href="#" class="insta"><i class="fab fa-instagram"></i></a>-->
 				</div>
 				<div class="buttons">
-					<button>Message</button>
-					<button>Subscribe</button>
+					<button id="emailButton">Reveal Email</button>
 				</div>
 				<div class="social-share">
 					<div class="row">
-						<i class="far fa-heart"></i>
-						<i class="icon-2 fas fa-heart"></i>
-						<span>20.4k</span>
 					</div>
 					<div class="row">
-						<i class="far fa-comment"></i>
-						<i class="icon-2 fas fa-comment"></i>
-						<span>14.3k</span>
+						<span></span>
 					</div>
 					<div class="row">
-						<i class="fas fa-share"></i>
-						<span>12.8k</span>
 					</div>
 				</div>
 			</div>
@@ -164,7 +157,7 @@
 				<div class="card" id="card">
 					<div class="card-image"></div>
 					<div class="card-text">
-						<h2 class="project-h2">Project One</h2>
+						<h2 class="project-h2">EqManage</h2>
 						<p class="project-p">Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
 					</div>
 				</div>
@@ -474,28 +467,36 @@
 	// document.querySelector('.content').style.color = random_color;
 
 	var cardWidth = document.getElementById("card").offsetWidth;
-	var boxShadow = "-" + cardWidth/10 + "px " + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #c78140, " + cardWidth/10 + "px " + "-" + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #ffc964";
+	var boxShadow = "-" + cardWidth/10 + "px " + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #a54c29, " + cardWidth/10 + "px " + "-" + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #ff7641";
 	var carDiv = document.getElementsByClassName("card");
 	for (var i = 0; i < carDiv.length; i++) {
 		carDiv[i].style.boxShadow = boxShadow;
-		carDiv[i].style.background="#ffa552";
+		carDiv[i].style.background="#D36135";
 	}
 
 	window.addEventListener('resize', () => {
 		// We execute the same script as before
 		var cardWidth = document.getElementById("card").offsetWidth;
-		var boxShadow = "-" + cardWidth/10 + "px " + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #c78140, " + cardWidth/10 + "px " + "-" + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #ffc964";
+		var boxShadow = "-" + cardWidth/10 + "px " + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #a54c29, " + cardWidth/10 + "px " + "-" + cardWidth/10 + "px " + (cardWidth/10)*2 +"px #ff7641";
 		var carDiv = document.getElementsByClassName("card");
 		for (var i = 0; i < carDiv.length; i++) {
 			carDiv[i].style.boxShadow = boxShadow;
-			carDiv[i].style.background="#ffa552";
+			carDiv[i].style.background="#D36135";
 		}
 	});
 
 	jQuery(".project-h2").fitText(1);
 	jQuery(".project-p").fitText(2);
 
+	const btn = document.getElementById("emailButton");
 
+	btn.addEventListener("click", ()=>{
+		if(btn.innerText === "Reveal Email"){
+			btn.innerText = "yuki.kume@unciabit.com";
+		}else{
+			btn.innerText= "Reveal Email";
+		}
+	})
 
 </script>
 </div>
