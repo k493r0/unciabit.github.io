@@ -329,19 +329,19 @@ h2 {
         font-size: 22px;
     }
     .tagcloud-span{
-        align-self: flex-end;
+        align-self: center;
     }
     .tagcloud-div{
-        align-items: flex-start
+        align-items: center;
     }
 
     .about-me{
-        width: 40%;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 600px) {
     .tagcloud{
-        margin-top: 80%;
+        /*margin-top: 80%;*/
         font-size: 15px;
     }
     .tagcloud-div{
@@ -629,4 +629,24 @@ canvas {
 }
 .count-particles {
     border-radius: 0 0 3px 3px;
+}
+.about-me p{
+    line-height: 30px;
+}
+@media only screen and (max-width: 800px){
+    footer{
+        position: absolute;
+        bottom: 40px;
+    }
+}
+@media only screen and (min-width: 800px){
+    footer{
+        position: absolute;
+        bottom: 5px;
+    }
+}
+
+
+footer{
+
 }
