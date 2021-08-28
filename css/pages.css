@@ -246,7 +246,7 @@ h2 {
 @media only screen and (max-width: 600px){
     .card {
         display: grid;
-        grid-template-columns: 60vw;
+        grid-template-columns: 70vw;
         grid-template-rows: 210px 210px 00px;
         grid-template-areas: "image" "text" "stats";
         border-radius: 18px;
@@ -371,8 +371,6 @@ h2 {
 .tagcloud--item:hover {
     color: #36454F;
 }
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 /**{*/
