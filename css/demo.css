@@ -344,7 +344,7 @@ a:focus {
 @media screen and (max-width: 50em) {
 	.codrops-header {
 		width: 100%;
-		font-size: 0.8em;
+		font-size: 0.74em;
 		-webkit-box-flex: 0;
 		-ms-flex: none;
 		flex: none;
