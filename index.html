@@ -388,17 +388,17 @@
 				});
 	}, 600);
 
-	function preventDefault(e){
-		e.preventDefault();
-	}
-
-	function disableScroll(){
-		document.body.addEventListener('touchmove', preventDefault, { passive: false });
-	}
-	function enableScroll(){
-		document.body.removeEventListener('touchmove', preventDefault);
-	}
-	disableScroll();
+	// function preventDefault(e){
+	// 	e.preventDefault();
+	// }
+	//
+	// function disableScroll(){
+	// 	document.body.addEventListener('touchmove', preventDefault, { passive: false });
+	// }
+	// function enableScroll(){
+	// 	document.body.removeEventListener('touchmove', preventDefault);
+	// }
+	// disableScroll();
 
 	var heights = window.innerHeight;
 	document.getElementById("body").style.height = heights + "px";
@@ -497,6 +497,11 @@
 			btn.innerText= "Reveal Email";
 		}
 	})
+
+	// const pageNav = document.getElementById("10");
+	// pageNav.addEventListener("click", ()=>{
+	// 	enableScroll();
+	// })
 
 </script>
 </div>
