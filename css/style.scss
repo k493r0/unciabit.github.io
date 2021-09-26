@@ -11,7 +11,7 @@ $transition: all #{$speed} cubic-bezier(0.310, -0.105, 0.430, 1.400);
 .button {
   display: block;
   background-color: $color;
-  width: fit-content;
+  //width: fit-content;
   height: 100px;
   line-height: 100px;
   margin: auto;
