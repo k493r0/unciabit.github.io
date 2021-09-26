@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "script.js",
+  "sourceRoot": "",
+  "sources": [
+    "script.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA,CAAA;AAAA,MAAA;;EAAA,aAAA,GAAgB,QAAA,CAAA,CAAA;WACd,CAAA,CAAE,SAAF,CAAY,CAAC,WAAb,CAAyB,SAAzB;EADc;;EAGhB,CAAA,CAAE,QAAF,CAAW,CAAC,KAAZ,CAAkB,QAAA,CAAA,CAAA;WAChB,CAAA,CAAE,SAAF,CAAY,CAAC,KAAb,CAAmB,QAAA,CAAA,CAAA;MACjB,CAAA,CAAE,IAAF,CAAI,CAAC,QAAL,CAAc,SAAd;aACA,UAAA,CAAW,aAAX,EAA0B,IAA1B;IAFiB,CAAnB;EADgB,CAAlB;AAHA",
+  "sourcesContent": [
+    "removeSuccess = ->\n  $('.button').removeClass 'success'\n\n$(document).ready ->\n  $('.button').click ->\n    $(@).addClass 'success'\n    setTimeout removeSuccess, 3000"
+  ]
+}
