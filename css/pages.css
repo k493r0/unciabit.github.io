@@ -232,7 +232,7 @@ h2 {
     .card {
         display: grid;
         grid-template-columns: 400px;
-        grid-template-rows: 210px 210px 0px;
+        grid-template-rows: 250px fit-content(100%) 0px;
         grid-template-areas: "image" "text" "stats";
         border-radius: 18px;
         background: #34816D;
@@ -247,7 +247,7 @@ h2 {
     .card {
         display: grid;
         grid-template-columns: 70vw;
-        grid-template-rows: 210px 210px 00px;
+        grid-template-rows: 250px fit-content(100%) 0px;
         grid-template-areas: "image" "text" "stats";
         border-radius: 18px;
         background: #34816D;
@@ -273,7 +273,7 @@ h2 {
 }
 .card-image {
     grid-area: image;
-    background: url("../img/img3.png");
+    /*background: url("img/eqmanage.png");*/
     /*border-top-left-radius: 15px;*/
     /*border-top-right-radius: 15px;*/
     border-radius: 15px;
