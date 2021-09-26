@@ -235,7 +235,7 @@ h2 {
         grid-template-rows: 250px fit-content(100%) 0px;
         grid-template-areas: "image" "text" "stats";
         border-radius: 18px;
-        background: #34816D;
+        background: #C06C84;
         /*box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;*/
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         font-family: roboto;
@@ -250,7 +250,7 @@ h2 {
         grid-template-rows: 250px fit-content(100%) 0px;
         grid-template-areas: "image" "text" "stats";
         border-radius: 18px;
-        background: #34816D;
+        background: #C06C84;
         /*box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;*/
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         font-family: roboto;
@@ -337,7 +337,7 @@ h2 {
 
     .about-me{
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 }
 @media only screen and (max-width: 600px) {
